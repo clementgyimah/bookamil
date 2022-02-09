@@ -1,0 +1,34 @@
+.title1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.normal-text1 {
+    font-size: 30px;
+}
+
+.normal-text2 {
+    font-size: 20px;
+}
+.normal-text3 {
+    font-size: 10px;
+}
+
+.normal-text4 {
+    font-size: 5px;
+}
