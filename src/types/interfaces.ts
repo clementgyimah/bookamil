@@ -80,7 +80,7 @@ interface IBookItems {
   id: string
   kind: string
   saleInfo: ISaleInfo
-  searchInfo: ISearchInfo
+  searchInfo?: ISearchInfo
   selfLink: string
   volumeInfo: IVolumeInfo
 }
