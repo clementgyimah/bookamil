@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button component snapshot test 1`] = `
+<button
+  className="button-style"
+>
+  <span
+    className="normal-text15"
+    id="button-text"
+  >
+    Test Button
+  </span>
+  <span
+    className="open-new-tab-icon-container"
+  >
+    <svg
+      color="white"
+      fill="currentColor"
+      height={15}
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      viewBox="0 0 512 512"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        open in new tab icon
+      </title>
+      <path
+        d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48M336 64h112v112M224 288L440 72"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="32"
+      />
+    </svg>
+  </span>
+</button>
+`;
