@@ -1,0 +1,19 @@
+:root {
+    --container-width: 190px;
+    --container-height: 250px;
+}
+
+.book-card-container {
+    width: var(--container-width);
+    height: var(--container-height);
+    margin: 5px;
+}
+
+.book-card-container:hover {
+    cursor: pointer;
+}
+
+.image-style {
+    width: var(--container-width);
+    height: var(--container-height);
+}
