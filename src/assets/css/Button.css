@@ -1,0 +1,24 @@
+.button-style {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: #69A2B0;
+}
+
+.button-style:hover {
+    cursor: pointer;
+    background-color: #679A84;
+}
+
+#button-text {
+    color: white;
+}
+
+.open-new-tab-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
