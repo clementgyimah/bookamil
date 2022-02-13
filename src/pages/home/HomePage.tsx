@@ -1,9 +1,9 @@
 import * as React from 'react'
 import '../../assets/css/HomePage.css'
 import '../../assets/css/FontSize.css'
-import '../../assets/css/Animations.css'
 import { BookCard } from '../../components/BookCard'
 import axios from 'axios'
+import { Spinner } from '../../components'
 import { IBookItems, IBook } from '../../types'
 
 const HomePage = () => {
@@ -45,11 +45,7 @@ const HomePage = () => {
               <BookCard key={eachBook.id} bookItem={eachBook} />
             ))
           ) : (
-            <div className="spinner-main-container">
-              <div className="spinner-style spinner-animation">
-                <span id="normal-text30">{null}</span>
-              </div>
-            </div>
+            <Spinner />
           )}
         </div>
       </div>
