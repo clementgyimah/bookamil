@@ -3,6 +3,7 @@ import '../../assets/css/HomePage.css'
 import '../../assets/css/FontSize.css'
 import { BookCard } from '../../components/BookCard'
 import axios from 'axios'
+import { Spinner } from '../../components'
 import { IBookItems, IBook } from '../../types'
 
 const HomePage = () => {
@@ -44,9 +45,7 @@ const HomePage = () => {
               <BookCard key={eachBook.id} bookItem={eachBook} />
             ))
           ) : (
-            <div>
-              <span>No books available</span>
-            </div>
+            <Spinner />
           )}
         </div>
       </div>
