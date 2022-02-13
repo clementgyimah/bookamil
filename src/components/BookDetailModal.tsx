@@ -1,8 +1,9 @@
 import '../assets/css/BookDetailModal.css'
 import '../assets/css/FontSize.css'
-import { IBookModalProps, TMouseEvent, ITextValidatorProps } from '../types'
+import { IBookModalProps, TMouseEvent } from '../types'
 import { AiIcon } from './Icons'
 import { Button } from './Button'
+import { textValidator } from '../functions'
 
 const BookDetailModal = (props: IBookModalProps) => {
   const modalClass = props.show ? 'book-modal-container' : 'book-modal-container-disable'
@@ -11,16 +12,6 @@ const BookDetailModal = (props: IBookModalProps) => {
   }
 
   const preventClick = (e: TMouseEvent) => e.stopPropagation()
-
-  const textValidator = ({ theText, maxLength }: ITextValidatorProps) => {
-    if (theText) {
-      if (theText.length > maxLength) {
-        theText = `${theText.slice(0, maxLength)}...`
-      }
-      return theText
-    }
-    return ''
-  }
 
   const downloadBookPDF = () => null
 
