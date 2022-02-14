@@ -11,8 +11,8 @@
 #### 1. Clone this repository
 
 ```
-$ git clone https://github.com/EzoSystems/comeal-client-mobile.git
-$ cd comeal-client-mobile
+$ git clone https://github.com/clementgyimah/bookamil.git
+$ cd bookamil
 ```
 
 #### 2. Install dependencies
