@@ -14,6 +14,7 @@ const HomePage = () => {
   })
   const [errorOccured, setErrorOccured] = React.useState(false)
   React.useEffect(() => {
+    // books request from api
     axios
       .get(`https://www.googleapis.com/books/v1/volumes?q=poland&maxResults=30`)
       .then((resData) => {
@@ -25,6 +26,7 @@ const HomePage = () => {
       })
   }, [booksData])
 
+  // check if error has occured
   if (errorOccured) {
     throw new Error('occured in home page')
   }

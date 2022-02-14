@@ -6,9 +6,12 @@ import { BookDetailModal } from './BookDetailModal'
 const BookCard = (props: IBookCardProps) => {
   const [showModal, setShowModal] = React.useState(false)
 
+  // open modal
   const openModal = () => {
     setShowModal(true)
   }
+
+  // close modal
   const closeModal = () => {
     setShowModal(false)
   }

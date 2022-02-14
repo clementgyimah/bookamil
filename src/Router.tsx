@@ -4,6 +4,7 @@ import { ErrorBoundary } from './components'
 
 const Router = () => {
   return (
+    // wrap home page in the error boundary component to catch all errors
     <ErrorBoundary props={undefined}>
       <HomePage />
     </ErrorBoundary>

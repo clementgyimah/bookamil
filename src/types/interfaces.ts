@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { TCloseModal, TButtonAction } from '.'
 
+// interfaces
 interface IIdustryIdentifiers {
   type: string
   identifier: string

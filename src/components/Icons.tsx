@@ -3,7 +3,9 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 import { IoOpenOutline } from 'react-icons/io5'
 import { IIconProps } from '../types'
 
+// Ant Design icons
 const AiIcon = (props: IIconProps) => {
+  // perform icon action
   const handleIconAction = () => {
     if (props.iconAction) {
       props.iconAction()
@@ -21,7 +23,9 @@ const AiIcon = (props: IIconProps) => {
   )
 }
 
+// Ionicons 5 icons
 const Io5Icon = (props: IIconProps) => {
+  // perform icon action
   const handleIconAction = () => {
     if (props.iconAction) {
       props.iconAction()

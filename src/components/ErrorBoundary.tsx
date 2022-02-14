@@ -9,6 +9,7 @@ class ErrorBoundary extends React.Component<IErrorBoundaryProps, IErrorBoundaryS
     this.state = { error: null, errorInfo: null }
   }
 
+  // catch any error that occurs in child component
   componentDidCatch(
     error: IErrorBoundaryState['error'],
     errorInfo: IErrorBoundaryState['errorInfo']
@@ -22,8 +23,8 @@ class ErrorBoundary extends React.Component<IErrorBoundaryProps, IErrorBoundaryS
   }
 
   render() {
+    // check if any error has occured in child component
     if (this.state.errorInfo) {
-      // Error path
       return (
         <div className="error-main-container">
           <div className="error-sub-container">
@@ -37,7 +38,7 @@ class ErrorBoundary extends React.Component<IErrorBoundaryProps, IErrorBoundaryS
         </div>
       )
     }
-    // Normally, just render children
+    // render child if no error occurs
     return this.props.children
   }
 }
