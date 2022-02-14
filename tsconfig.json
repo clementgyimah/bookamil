@@ -20,5 +20,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [ "src", "babel.config.ts" ]
+  "include": [ "src" ]
 }

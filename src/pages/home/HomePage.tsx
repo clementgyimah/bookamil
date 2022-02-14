@@ -12,6 +12,7 @@ const HomePage = () => {
     kind: '',
     items: [],
   })
+  const [errorOccured, setErrorOccured] = React.useState(false)
   React.useEffect(() => {
     axios
       .get(`https://www.googleapis.com/books/v1/volumes?q=poland&maxResults=30`)
@@ -20,9 +21,13 @@ const HomePage = () => {
       })
       .catch((err) => {
         console.error(new Error(`Error when quering book data: \n ${err}`))
+        setErrorOccured(true)
       })
   }, [booksData])
 
+  if (errorOccured) {
+    throw new Error('occured in home page')
+  }
   return (
     <div className="main-container">
       <header>

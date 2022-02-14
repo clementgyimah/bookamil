@@ -1,0 +1,15 @@
+.error-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.error-title-text {
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.error-details-title {
+    white-space: 'pre-wrap';
+    color: rgba(0, 0, 0, 0.6)
+}

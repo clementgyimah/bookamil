@@ -3,6 +3,7 @@
 exports[`button component snapshot test 1`] = `
 <button
   className="button-style"
+  onClick={[Function]}
 >
   <span
     className="normal-text15"

@@ -13,9 +13,19 @@ const BookDetailModal = (props: IBookModalProps) => {
 
   const preventClick = (e: TMouseEvent) => e.stopPropagation()
 
-  const downloadBookPDF = () => null
+  const downloadBookPDF = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
+    if (props.data.accessInfo.pdf.isAvailable && props.data.accessInfo.pdf.downloadLink) {
+      window.location.href = props.data.accessInfo.pdf.downloadLink
+    } else {
+      alert('Oops 😔, PDF is not available for this book')
+    }
+  }
 
-  const readBook = () => null
+  const readBook = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
+    window.open(props.data.volumeInfo.previewLink)
+  }
 
   return (
     <div className={modalClass} onClick={closeModalHandler}>

@@ -5,7 +5,7 @@ import { Io5Icon } from './Icons'
 
 const Button = (props: IButtonProps) => {
   return (
-    <button className="button-style">
+    <button className="button-style" onClick={props.buttonAction}>
       <span className="normal-text15" id="button-text">
         {props.title}
       </span>
