@@ -41,6 +41,7 @@ exports[`home page snapshot test 1`] = `
         className="spinner-main-container"
       >
         <div
+          aria-label="book-loader"
           className="spinner-style spinner-animation"
         >
           <span />

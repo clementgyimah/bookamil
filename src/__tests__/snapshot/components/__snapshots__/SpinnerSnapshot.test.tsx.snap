@@ -5,6 +5,7 @@ exports[`spinner component snapshot test 1`] = `
   className="spinner-main-container"
 >
   <div
+    aria-label="book-loader"
     className="spinner-style spinner-animation"
   >
     <span />

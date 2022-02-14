@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { TCloseModal, TButtonAction } from '.'
 
 interface IIdustryIdentifiers {
@@ -55,6 +56,7 @@ interface IEpub {
 
 interface IPdf {
   isAvailable: boolean
+  downloadLink?: string
 }
 
 interface IAccessInfo {
@@ -123,6 +125,15 @@ interface IButtonProps {
   buttonAction: TButtonAction
 }
 
+interface IErrorBoundaryProps {
+  props: any
+}
+
+interface IErrorBoundaryState {
+  error: Error | null
+  errorInfo: React.ErrorInfo | null
+}
+
 export type {
   IIdustryIdentifiers,
   IReadingModes,
@@ -141,4 +152,6 @@ export type {
   IIconProps,
   ITextValidatorProps,
   IButtonProps,
+  IErrorBoundaryProps,
+  IErrorBoundaryState,
 }
