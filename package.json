@@ -22,9 +22,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test a",
-    "test-coverage": "react-scripts test --coverage a",
-    "update-test": "react-scripts test -u a",
+    "test": "react-scripts test",
+    "test-coverage": "react-scripts test --coverage",
+    "update-test": "react-scripts test -u",
     "eject": "react-scripts eject",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose"

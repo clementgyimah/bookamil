@@ -1,6 +1,6 @@
 import React from 'react'
 import { HomePage } from './pages/home/HomePage'
-import { ErrorBoundary } from './components/ErrorBoundary'
+import { ErrorBoundary } from './components'
 
 const Router = () => {
   return (

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home page snapshot test 1`] = `
+<div
+  className="main-container"
+>
+  <header>
+    <div
+      className="app-details-container"
+    >
+      <span
+        className="title40"
+        id="app-name-text"
+      >
+        Bookamil
+      </span>
+      <span
+        className="title20"
+        id="short-description-text"
+      >
+        Browse millions of books. Read your favourite books here
+      </span>
+    </div>
+  </header>
+  <div
+    className="home-body"
+  >
+    <div
+      className="category-title-container"
+    >
+      <span
+        className="normal-text25"
+      >
+        Most popular
+      </span>
+    </div>
+    <div
+      className="category-content"
+    >
+      <div
+        className="spinner-main-container"
+      >
+        <div
+          aria-label="book-loader"
+          className="spinner-style spinner-animation"
+        >
+          <span />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
